@@ -1,0 +1,20 @@
+name: pretty_gitty
+description: A new brick created with the Mason CLI.
+
+# The following defines the brick repository url.
+# Uncomment and update the following line before publishing the brick.
+# repository: https://github.com/my_org/my_repo
+
+version: 1.0.0
+
+environment:
+  mason: ">=0.1.0-dev.57 <0.1.0"
+
+vars:
+  attribute:
+    type: enum
+    description: choice b/w official-flutter/dart-specific .gitattributes
+    values:
+      - official-flutter
+      - dart-specific
+    prompt: Which .gitattributes do you want to use?
